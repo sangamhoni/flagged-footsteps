@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+.search {
+    display: flex;
+    width: 30vw;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+button {
+    width: 70px;
+    border: none;
+    border-right: 2px solid black;
+}
+
+input[type=text] {
+    flex-grow: 1;
+    border: none;
+    padding: 20px;
+    cursor: text;
+    outline: none;
+    /* outline none is used to remove the border when its clicked/focused */
+}
+
+/* input[type=text]:focus {
+    border: none;
+} */
