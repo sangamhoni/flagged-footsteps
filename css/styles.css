@@ -6,17 +6,22 @@
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-h1, h2, h3, p {
-    margin: 0.2em 0;
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0.25em 0;
+}
+
+i {
+    font-size: inherit;
+    color: inherit;
 }
 
 .container {
@@ -24,20 +29,27 @@ h1, h2, h3, p {
     margin: 0 auto;
 }
 
-header {
-    height: 70vh;
-    /* background-image: url('../assets/hero-image.jpg'); */
-    background-position: center;
-    background-repeat: no-repeat; 
-    /* background-size: cover;  */
-    /* background-blend-mode: color; */
-    /* background-color: #cccccc; */
-    background-color: blue;
+body {
+    background-color: #F1F1F1;
 }
 
-.bg-class {
-    position: relative;
-    overflow: hidden;
+
+/* HEADER SECTION */
+
+header {
+    height: 100vh;
+    background-image: url('../assets/hero-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-blend-mode: color-burn;
+    background-color: #000000CC;
+    background-attachment: fixed;
+    color: #dda45c;
+}
+
+header h3{
+    color: #F1F1F1;
 }
 
 .bg-img {
@@ -46,13 +58,82 @@ header {
     /* overflow: hidden;    */
 }
 
-
-.header img {
-
+.fa-regular.fa-flag-pennant {
+    font-size: 3rem; /* Adjust size */
 }
 
 header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+
+/* MAIN CONTENT */
+
+content .container{
+    display: flex;
+    gap: 150px;
+}
+
+.actions {
+    margin: 100px 0;
+    border: 2px solid #dda45c;
+    border-radius: 15px;
+    padding: 20px 50px;
+    box-shadow: #dda45c50 0px 8px 24px, #dda45c50 0px 16px 56px, #dda45c50 0px 24px 80px;
+}
+
+.actions h3 {
+    margin-bottom: 15px;
+}
+
+.actions hr {
+    border: 1px solid #dda45c;
+    margin: 10px 0;
+}
+
+.actions p {
+    font-size: 1.2rem;
+}
+
+.illustration {
+    width: 150px;
+    margin: 25px 0;
+}
+
+
+/* MAIN SECTION */
+section {
+    background-color: #dda45c;
+    padding: 50px 0;
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section p{
+    font-size: 1.8rem;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 25px;
+}
+
+footer {
+    padding: 0 10px;
+}
+footer hr {
+    border: 1px solid #dda45c;
+    margin: 10px 0;
+}
+
+footer p {
+    text-align: center;
+    color: #916127;
 }
